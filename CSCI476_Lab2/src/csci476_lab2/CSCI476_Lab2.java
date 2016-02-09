@@ -1,7 +1,7 @@
 /*
  * This code is written by John Trapp and Brendan Bellows
  * for the express purpose to be used in CSCI476 at Montana State University
- * Spring 2016. Please do not use elseware.
+ * Spring 2016. Please do not use elsewhere.
  */
 package csci476_lab2;
 
@@ -22,10 +22,8 @@ public class CSCI476_Lab2 {
         // TODO code application logic
         importHashValues();
 
-        //start timer
         decodeAll();
-
-        //stop timer
+        
         printResults();
     }
 
@@ -34,6 +32,18 @@ public class CSCI476_Lab2 {
     }
 
     private static void decodeAll() {
+        Dictionary dictionary = new Dictionary();
+        if (dictionary.importDictionary() == false){
+            System.out.println("Dictionary import failed. :(");
+            System.exit(1);
+        }
+        
+        //start timer
+        
+        //decode hash value
+        
+        //stop timer, add info, and repeat for all hash values
+        
         //@todo code to decode the arrayList hashList
     }
 

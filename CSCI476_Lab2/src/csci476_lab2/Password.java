@@ -11,8 +11,8 @@ package csci476_lab2;
  */
 public class Password {
 
-    private String hashValue, decodedPass;
-    private double decodeTime;
+    private String hashValue = null, decodedPass = null;
+    private double decodeTime = 0.0;
 
     public Password(String hashValueInput) {
         hashValue = hashValueInput;
@@ -46,7 +46,7 @@ public class Password {
     public String toString() {
         String output = "The password for hash value " + hashValue + " is "
                 + decodedPass + ", it took the program " + decodeTime
-                + "seconds to recover this password";
+                + " seconds to recover this password.";
         return output;
     }
 }
